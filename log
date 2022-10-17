@@ -180,3 +180,20 @@ heap.c:36:16: error: array subscript is not an integer
 cc1: all warnings being treated as errors
 Compilation failed
 1a3bd66
+Mon 17 Oct 2022 01:04:08 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:33:16: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   33 |   int * hijo = (int * )pq->size;
+      |                ^
+heap.c:35:16: error: array subscript is not an integer
+   35 |   pq->heapArray[hijo].data = data;
+      |                ^
+heap.c:36:16: error: array subscript is not an integer
+   36 |   pq->heapArray[hijo].priority = priority;
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+e6fdd08
