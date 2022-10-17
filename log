@@ -1095,3 +1095,14 @@ heap.c:39:16: error: ‘hijo’ may be used uninitialized in this function [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 94726e5
+Mon 17 Oct 2022 02:45:28 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:41:19: error: ‘hijo’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   41 |   pq->size = hijo + 1;
+      |              ~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+1a932d0
