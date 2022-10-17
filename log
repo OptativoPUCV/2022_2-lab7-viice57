@@ -864,3 +864,26 @@ Mon 17 Oct 2022 02:28:52 AM UTC:
  tests:  4|2
 total_score: 30/70
 20256d3
+Mon 17 Oct 2022 02:31:45 AM UTC: 
+ heap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:31:3: error: too few arguments to function ‘printf’
+   31 |   printf()
+      |   ^~~~~~
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdio.h:866,
+                 from test.c:1:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/stdio2.h:110:1: note: declared here
+  110 | printf (const char *__restrict __fmt, ...)
+      | ^~~~~~
+In file included from test.c:4:
+heap.c:31:11: error: expected ‘;’ before ‘if’
+   31 |   printf()
+      |           ^
+      |           ;
+   32 | 
+   33 |   if(pq->size == pq->capac) {
+      |   ~~       
+Compilation failed
+ea4bed6
