@@ -590,3 +590,9 @@ heap.c:69:8: error: ‘i’ is used uninitialized in this function [-Werror=unin
 cc1: all warnings being treated as errors
 Compilation failed
 99dcaad
+Mon 17 Oct 2022 01:51:53 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|2
+total_score: 30/70
+857abf0
