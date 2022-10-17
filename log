@@ -1034,3 +1034,14 @@ Mon 17 Oct 2022 02:40:13 AM UTC:
  tests:  3|2
 total_score: 25/70
 1f3e7ea
+Mon 17 Oct 2022 02:40:34 AM UTC: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:45:34: error: ‘padre’ undeclared (first use in this function)
+   45 |   while(priority > pq->heapArray[padre].priority) {
+      |                                  ^~~~~
+heap.c:45:34: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7ff70db
