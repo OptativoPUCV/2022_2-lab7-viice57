@@ -1022,3 +1022,9 @@ heap.c:38:17: note: each undeclared identifier is reported only once for each fu
 cc1: all warnings being treated as errors
 Compilation failed
 6bb785e
+Mon 17 Oct 2022 02:38:05 AM UTC: 
+ heap.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  3|2
+total_score: 25/70
+be0bfb6
