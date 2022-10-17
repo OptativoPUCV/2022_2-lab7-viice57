@@ -27,7 +27,7 @@ void * heap_top(Heap * pq){
 void heap_push(Heap * pq, void * data, int priority) {
   int hijo = pq->size;
   int padre = (hijo - 1) / 2;
-  
+  printf("%d", pq->capac);
   if(pq->size == pq->capac) {
     pq->heapArray = realloc(pq->heapArray, (pq->capac * 2) + 1);
     pq->capac = (pq->capac * 2) + 1;
