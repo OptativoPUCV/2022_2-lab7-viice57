@@ -496,3 +496,9 @@ heap.c:42:9: error: ‘heapElem’ {aka ‘struct nodo’} has no member named �
       |         priority
 Compilation failed
 e4298ff
+Mon 17 Oct 2022 01:39:08 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|2
+total_score: 30/70
+74fd2f1
