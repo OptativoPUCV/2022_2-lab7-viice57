@@ -365,3 +365,21 @@ Mon 17 Oct 2022 01:19:27 AM UTC:
  tests:  4|2
 total_score: 30/70
 294b5f3
+Mon 17 Oct 2022 01:21:59 AM UTC: 
+ heap.c | 11 +++--------
+ 1 file changed, 3 insertions(+), 8 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:43:25: error: invalid operands to binary == (have ‘heapElem’ {aka ‘struct nodo’} and ‘heapElem’ {aka ‘struct nodo’})
+   43 |     pq->heapArray[hijo] == pq->heapArray[padre];
+      |     ~~~~~~~~~~~~~~~~~~~ ^~ ~~~~~~~~~~~~~~~~~~~~
+      |                  |                      |
+      |                  |                      heapElem {aka struct nodo}
+      |                  heapElem {aka struct nodo}
+heap.c:44:26: error: invalid operands to binary == (have ‘heapElem’ {aka ‘struct nodo’} and ‘heapElem’ {aka ‘struct nodo’})
+   44 |     pq->heapArray[padre] == aux;
+      |     ~~~~~~~~~~~~~~~~~~~~ ^~
+      |                  |
+      |                  heapElem {aka struct nodo}
+Compilation failed
+5aaf20a
