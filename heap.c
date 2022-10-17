@@ -25,7 +25,6 @@ void * heap_top(Heap * pq){
 
 
 void heap_push(Heap * pq, void * data, int priority) {
-  int hijo = pq->size;
   if(pq->heapArray[pq->size].priority == 0 || pq->heapArray[pq->size].data == NULL) {  int hijo = pq->size;}
   //int padre = (hijo - 1) / 2;
   
