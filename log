@@ -252,3 +252,9 @@ heap.c:48:33: error: assignment to ‘void *’ from ‘int’ makes pointer fro
 cc1: all warnings being treated as errors
 Compilation failed
 4edb30d
+Mon 17 Oct 2022 01:10:38 AM UTC: 
+ heap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  4|2
+total_score: 30/70
+51392e0
