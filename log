@@ -887,3 +887,9 @@ heap.c:31:11: error: expected ‘;’ before ‘if’
       |   ~~       
 Compilation failed
 ea4bed6
+Mon 17 Oct 2022 02:31:54 AM UTC: 
+ heap.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  4|2
+total_score: 30/70
+9677e4e
