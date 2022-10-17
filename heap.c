@@ -30,7 +30,7 @@ void heap_push(Heap * pq, void * data, int priority) {
     pq->capac = (pq->capac * 2) + 1;
   }
 
-  if(!pq->heapArray[pq->size + 1]) {
+  if(pq->heapArray[pq->size + 1] == NULL) {
     pq->heapArray[pq->size + 1].data = data;
     pq->heapArray[pq->size + 1].priority = priority;
   }

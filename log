@@ -52,3 +52,15 @@ heap.c:33:6: error: wrong type argument to unary exclamation mark
       |      ^
 Compilation failed
 72efad7
+Mon 17 Oct 2022 12:43:28 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:33:34: error: invalid operands to binary == (have ‘heapElem’ {aka ‘struct nodo’} and ‘void *’)
+   33 |   if(pq->heapArray[pq->size + 1] == NULL) {
+      |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^~
+      |                   |
+      |                   heapElem {aka struct nodo}
+Compilation failed
+2c31ebd
