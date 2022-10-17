@@ -1106,3 +1106,14 @@ heap.c:41:19: error: ‘hijo’ may be used uninitialized in this function [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 1a932d0
+Mon 17 Oct 2022 02:46:48 AM UTC: 
+ heap.c | 7 ++-----
+ 1 file changed, 2 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:36:7: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘heapAray’; did you mean ‘heapArray’?
+   36 |   pq->heapAray[hijo].data = data;
+      |       ^~~~~~~~
+      |       heapArray
+Compilation failed
+33f6359
