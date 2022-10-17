@@ -58,16 +58,16 @@ void heap_pop(Heap * pq) {
         printf("%d ",pq->heapArray[i].priority);
     }
     printf("]\n");
-  /*heapElem aux = pq->heapArray[pq->size];
+  heapElem aux = pq->heapArray[pq->size - 1];
 
   pq->heapArray[pq->size] = pq->heapArray[0];
   pq->heapArray[0] = aux;
 
-  pq->heapArray[pq->size].data = NULL;
-  pq->heapArray[pq->size].priority = 0;
+  pq->heapArray[pq->size - 1].data = NULL;
+  pq->heapArray[pq->size - 1].priority = 0;
   //pq->size--;*/
 
-  int final = pq->size - 1;
+  /*int final = pq->size - 1;
       
     pq->heapArray[0].priority = pq->heapArray[final].priority;
     pq->heapArray[0].data = pq->heapArray[final].data;
@@ -75,7 +75,7 @@ void heap_pop(Heap * pq) {
     pq->heapArray[final].data = NULL;
     pq->heapArray[final].priority = 0;
 
-    pq->size--;
+    pq->size--;*/
 }
 
 Heap * createHeap() {
