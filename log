@@ -778,3 +778,23 @@ Mon 17 Oct 2022 02:13:15 AM UTC:
  tests:  4|2
 total_score: 30/70
 d4c9fc7
+Mon 17 Oct 2022 02:15:50 AM UTC: 
+ heap.c | 17 ++++++++++-------
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:71:9: error: ‘priority’ undeclared (first use in this function)
+   71 |   while(priority > pq->heapArray[padre].priority) {
+      |         ^~~~~~~~
+heap.c:71:9: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:71:34: error: ‘padre’ undeclared (first use in this function)
+   71 |   while(priority > pq->heapArray[padre].priority) {
+      |                                  ^~~~~
+heap.c:72:5: error: ‘aux’ undeclared (first use in this function)
+   72 |     aux.priority = pq->heapArray[hijo].priority;
+      |     ^~~
+heap.c:72:34: error: ‘hijo’ undeclared (first use in this function)
+   72 |     aux.priority = pq->heapArray[hijo].priority;
+      |                                  ^~~~
+Compilation failed
+c5d97e9
