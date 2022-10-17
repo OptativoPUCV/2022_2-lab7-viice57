@@ -602,3 +602,14 @@ Mon 17 Oct 2022 01:52:01 AM UTC:
  tests:  4|2
 total_score: 30/70
 2f935af
+Mon 17 Oct 2022 01:54:20 AM UTC: 
+ heap.c | 10 ++++------
+ 1 file changed, 4 insertions(+), 6 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:64:3: error: ‘mayor’ undeclared (first use in this function)
+   64 |   mayor.data = pq->heapArray[0].data;
+      |   ^~~~~
+heap.c:64:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c852c0f
