@@ -68,7 +68,7 @@ void heap_pop(Heap * pq) {
   //pq->size--;*/
 
   for(int i = 0; i < pq->size; i++) {
-    if(pq->hashArray[i].priority == 0) {
+    if(pq->heapArray[i].priority == 0) {
       pq->size--;
     }
   }

@@ -689,3 +689,9 @@ heap.c:71:12: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘h
       |            heapArray
 Compilation failed
 2aae484
+Mon 17 Oct 2022 02:05:07 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|2
+total_score: 30/70
+bad5b02
