@@ -67,6 +67,12 @@ void heap_pop(Heap * pq) {
   pq->heapArray[pq->size].priority = 0;
   //pq->size--;*/
 
+  for(int i = 0; i < pq->size; i++) {
+    if(pq->hashArray[i].priority == 0) {
+      pq->size--;
+    }
+  }
+
   heapElem aux;
 
   aux.priority = pq->heapArray[0].priority;

@@ -678,3 +678,14 @@ Mon 17 Oct 2022 02:02:08 AM UTC:
  tests:  4|2
 total_score: 30/70
 983e90f
+Mon 17 Oct 2022 02:04:59 AM UTC: 
+ heap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:71:12: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘hashArray’; did you mean ‘heapArray’?
+   71 |     if(pq->hashArray[i].priority == 0) {
+      |            ^~~~~~~~~
+      |            heapArray
+Compilation failed
+2aae484
