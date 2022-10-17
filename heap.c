@@ -69,9 +69,11 @@ void heap_pop(Heap * pq) {
       
     pq->heapArray[0].priority = pq->heapArray[pq->size - 1].priority;
     pq->heapArray[0].data = pq->heapArray[pq->size - 1].data;
-      
-    pq->heapArray[pq->size - 1].priority = 0;
+  
     pq->heapArray[pq->size - 1].data = NULL;
+    pq->heapArray[pq->size - 1].priority = 0;
+
+    pq->size--;
 }
 
 Heap * createHeap() {
