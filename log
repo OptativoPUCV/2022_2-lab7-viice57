@@ -295,3 +295,14 @@ heap.c:34:7: error: unused variable ‘padre’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 db71452
+Mon 17 Oct 2022 01:15:36 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:34:7: error: unused variable ‘padre’ [-Werror=unused-variable]
+   34 |   int padre = (hijo - 1) / 2;
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+772080a
