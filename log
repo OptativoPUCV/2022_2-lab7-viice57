@@ -31,3 +31,14 @@ heap.c:34:21: error: ‘size’ undeclared (first use in this function)
 heap.c:34:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 502ed41
+Mon 17 Oct 2022 12:42:59 AM UTC: 
+ heap.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:33:21: error: ‘size’ undeclared (first use in this function)
+   33 |   if(!pq->heapArray[size + 1]) {
+      |                     ^~~~
+heap.c:33:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+f7e1a31
