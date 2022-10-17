@@ -936,3 +936,17 @@ Mon 17 Oct 2022 02:33:33 AM UTC:
  tests:  3|2
 total_score: 25/70
 b48c77f
+Mon 17 Oct 2022 02:36:00 AM UTC: 
+ heap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:29:47: error: wrong type argument to unary exclamation mark
+   29 |   if(pq->heapArray[pq->size].priority == 0 || !pq->heapArray[pq->size]) {  int hijo = pq->size;}
+      |                                               ^
+heap.c:29:80: error: unused variable ‘hijo’ [-Werror=unused-variable]
+   29 |   if(pq->heapArray[pq->size].priority == 0 || !pq->heapArray[pq->size]) {  int hijo = pq->size;}
+      |                                                                                ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3c8424f
