@@ -5,31 +5,41 @@
 #include <ctype.h>
 #include "heap.h"
 
-typedef struct nodo{
-   void* data;
+typedef struct nodo {
+   void * data;
    int priority;
-}heapElem;
+} heapElem;
 
-typedef struct Heap{
-  heapElem* heapArray;
+typedef struct Heap {
+  heapElem * heapArray;
   int size;
   int capac;
 } Heap;
 
 
-void * heap_top(Heap* pq){
-  if(pq->size == 0) return NULL;
-    return pq->heapArray[0].data;
+void * heap_top(Heap * pq){
+  if(!pq || pq->size == 0) return NULL;
+  return pq->heapArray[0].data;
 }
 
 
 
-void heap_push(Heap* pq, void* data, int priority){
+void heap_push(Heap * pq, void * data, int priority) {
+  if(pq->size == pq->capac) {
+    pq->heapArray = realloc(pq->heapArray, (pq->capac * 2) + 1);
+    pq->capac = (pq->capac * 2) + 1
+  }
 
+  int i = 1;
+  if(!pq->heapArray[size + i]) {
+    pq->heapArray[size + 1].data = data;
+    pq->heapArray[size + 1].priority = priority;
+    i++;
+  }
 }
 
 
-void heap_pop(Heap* pq){
+void heap_pop(Heap * pq) {
 
 }
 
