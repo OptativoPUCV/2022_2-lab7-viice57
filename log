@@ -76,3 +76,15 @@ heap.c:33:34: error: invalid operands to binary == (have ‘heapElem’ {aka ‘
       |                   heapElem {aka struct nodo}
 Compilation failed
 b9e54cd
+Mon 17 Oct 2022 12:44:02 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:33:42: error: ‘MULL’ undeclared (first use in this function); did you mean ‘NULL’?
+   33 |   if(pq->heapArray[pq->size + 1].data == MULL) {
+      |                                          ^~~~
+      |                                          NULL
+heap.c:33:42: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+5fd604a
