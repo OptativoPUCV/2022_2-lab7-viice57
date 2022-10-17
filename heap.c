@@ -52,7 +52,32 @@ void heap_push(Heap * pq, void * data, int priority) {
 
 
 void heap_pop(Heap * pq) {
-  heapElem aux;
+  heapElem aux = pq->heapArray[0];
+  heapElem mayor;
+  
+  aux = pq->heapArray[pq->size];
+  pq->heapArray[pq->size] = pq->heapArray[0];//Mueve el dato en posicion[0] al ultimo lugar
+  pq->heapArray[0] = aux;
+
+  pq->heapArray[pq->size].data = NULL;
+  pq->heapArray[pq->size].priority = 0;
+  pq->size--;
+
+  mayor.data = pq->heapArray[0].data;
+  mayor.priority = pq->heapArray[0].priority;
+  int i;
+  while(i != pq->capac){
+
+    //printf("%i", mayor.priority);
+    if (mayor.priority <= pq->heapArray[i].priority){
+      aux = mayor;
+      mayor = pq->heapArray[i];
+      pq->heapArray[i] = aux;
+    }
+
+    i++;
+  }
+  /*heapElem aux;
   pq->size = pq->size - 1;
 
   aux.priority = pq->heapArray[0].priority;
@@ -62,7 +87,7 @@ void heap_pop(Heap * pq) {
     pq->heapArray[0].data = pq->heapArray[pq->size].data;
       
     pq->heapArray[pq->size].priority = aux.priority;
-    pq->heapArray[pq->size].data = aux.data;
+    pq->heapArray[pq->size].data = aux.data;*/
 }
 
 Heap * createHeap() {
