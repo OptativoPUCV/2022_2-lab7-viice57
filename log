@@ -549,3 +549,9 @@ test.c:6:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 7e3e740
+Mon 17 Oct 2022 01:42:16 AM UTC: 
+ heap.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+ tests:  4|2
+total_score: 30/70
+544ba20

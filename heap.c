@@ -49,15 +49,16 @@ void heap_push(Heap * pq, void * data, int priority) {
     pq->heapArray[padre].data = aux.data;
 
     if(priority > pq->heapArray[0].priority) {
-    aux.priority = pq->heapArray[hijo].priority;
+        aux.priority = pq->heapArray[hijo].priority;
     aux.data = pq->heapArray[hijo].data;
       
-    pq->heapArray[hijo].priority = pq->heapArray[padre].priority;
-    pq->heapArray[hijo].data = pq->heapArray[padre].data;
+    pq->heapArray[hijo].priority = pq->heapArray[0].priority;
+    pq->heapArray[hijo].data = pq->heapArray[0].data;
       
-    pq->heapArray[padre].priority = aux.priority;
-    pq->heapArray[padre].data = aux.data;
+    pq->heapArray[0].priority = aux.priority;
+    pq->heapArray[0].data = aux.data;
 
+    }
   }
 }
 
