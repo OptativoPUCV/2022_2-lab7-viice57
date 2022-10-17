@@ -1084,3 +1084,14 @@ heap.c:32:16: note: each undeclared identifier is reported only once for each fu
 cc1: all warnings being treated as errors
 Compilation failed
 88ab0e5
+Mon 17 Oct 2022 02:44:54 AM UTC: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:39:16: error: ‘hijo’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   39 |   pq->heapArray[hijo].data = data;
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+94726e5
