@@ -1170,3 +1170,34 @@ heap.c:28:14: error: invalid type argument of unary ‘*’ (have ‘int’)
       |              ^~~~~~~~~
 Compilation failed
 b2f75f4
+Mon 17 Oct 2022 02:49:04 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:28:16: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   28 |   int * hijo = (int *) pq->size;
+      |                ^
+heap.c:29:26: error: invalid operands to binary / (have ‘int *’ and ‘int’)
+   29 |   int padre = (hijo - 1) / 2;
+      |               ~~~~~~~~~~ ^
+      |                     |
+      |                     int *
+heap.c:36:16: error: array subscript is not an integer
+   36 |   pq->heapArray[hijo].data = data;
+      |                ^
+heap.c:37:16: error: array subscript is not an integer
+   37 |   pq->heapArray[hijo].priority = priority;
+      |                ^
+heap.c:41:33: error: array subscript is not an integer
+   41 |     heapElem aux = pq->heapArray[hijo];
+      |                                 ^
+heap.c:43:18: error: array subscript is not an integer
+   43 |     pq->heapArray[hijo] = pq->heapArray[padre];
+      |                  ^
+heap.c:45:10: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   45 |     hijo = padre;
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+c6997ad
