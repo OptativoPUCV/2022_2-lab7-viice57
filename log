@@ -241,3 +241,14 @@ heap.c:48:33: error: assignment to ‘void *’ from ‘int’ makes pointer fro
 cc1: all warnings being treated as errors
 Compilation failed
 c731cd0
+Mon 17 Oct 2022 01:09:59 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:48:33: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   48 |       pq->heapArray[padre].data = pq->heapArray[hijo].priority;
+      |                                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+4edb30d
