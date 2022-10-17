@@ -88,3 +88,9 @@ heap.c:33:42: error: ‘MULL’ undeclared (first use in this function); did you
 heap.c:33:42: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 5fd604a
+Mon 17 Oct 2022 12:44:09 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|2
+total_score: 20/70
+6f6fe12
