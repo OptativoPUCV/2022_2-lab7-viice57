@@ -1201,3 +1201,9 @@ heap.c:45:10: error: assignment to ‘int *’ from ‘int’ makes pointer from
 cc1: all warnings being treated as errors
 Compilation failed
 c6997ad
+Mon 17 Oct 2022 02:49:36 AM UTC: 
+ heap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  3|2
+total_score: 25/70
+9cac943
