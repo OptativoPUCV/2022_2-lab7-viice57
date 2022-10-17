@@ -1069,3 +1069,18 @@ Mon 17 Oct 2022 02:43:45 AM UTC:
  tests:  4|2
 total_score: 30/70
 c00e2c5
+Mon 17 Oct 2022 02:44:39 AM UTC: 
+ heap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:30:9: error: unused variable ‘hijo’ [-Werror=unused-variable]
+   30 |     int hijo = pq->size;
+      |         ^~~~
+heap.c:32:16: error: ‘hijo’ undeclared (first use in this function)
+   32 |   int padre = (hijo - 1) / 2;
+      |                ^~~~
+heap.c:32:16: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+88ab0e5
