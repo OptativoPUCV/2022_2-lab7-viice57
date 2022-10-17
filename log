@@ -226,3 +226,18 @@ Mon 17 Oct 2022 01:05:48 AM UTC:
  tests:  3|2
 total_score: 25/70
 39ef5d1
+Mon 17 Oct 2022 01:09:37 AM UTC: 
+ heap.c | 12 +++++-------
+ 1 file changed, 5 insertions(+), 7 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:39:51: error: ‘padre’ undeclared (first use in this function)
+   39 |   if(pq->heapArray[hijo].priority > pq->heapArray[padre].priority) {
+      |                                                   ^~~~~
+heap.c:39:51: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:48:33: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   48 |       pq->heapArray[padre].data = pq->heapArray[hijo].priority;
+      |                                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+c731cd0
