@@ -798,3 +798,9 @@ heap.c:72:34: error: ‘hijo’ undeclared (first use in this function)
       |                                  ^~~~
 Compilation failed
 c5d97e9
+Mon 17 Oct 2022 02:16:13 AM UTC: 
+ heap.c | 13 -------------
+ 1 file changed, 13 deletions(-)
+ tests:  4|2
+total_score: 30/70
+b1ecde5
