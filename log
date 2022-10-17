@@ -502,3 +502,15 @@ Mon 17 Oct 2022 01:39:08 AM UTC:
  tests:  4|2
 total_score: 30/70
 74fd2f1
+Mon 17 Oct 2022 01:39:30 AM UTC: 
+ heap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:40:10: error: ‘hijp’ undeclared (first use in this function); did you mean ‘hijo’?
+   40 |   hijo = hijp + 1;
+      |          ^~~~
+      |          hijo
+heap.c:40:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+229fee1
