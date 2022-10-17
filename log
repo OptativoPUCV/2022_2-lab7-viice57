@@ -992,3 +992,18 @@ heap.c:36:17: note: each undeclared identifier is reported only once for each fu
 cc1: all warnings being treated as errors
 Compilation failed
 ac98f61
+Mon 17 Oct 2022 02:37:36 AM UTC: 
+ heap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:29:9: error: unused variable ‘hijo’ [-Werror=unused-variable]
+   29 |     int hijo = pq->size;
+      |         ^~~~
+heap.c:38:17: error: ‘hijo’ undeclared (first use in this function)
+   38 |   pq->heapArray[hijo].data = data;
+      |                 ^~~~
+heap.c:38:17: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+3eae99f
