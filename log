@@ -323,3 +323,9 @@ heap.c:42:54: error: ‘padre’ undeclared (first use in this function)
 heap.c:42:54: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 5e9c704
+Mon 17 Oct 2022 01:16:04 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|2
+total_score: 30/70
+aba4fa7
