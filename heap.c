@@ -37,7 +37,6 @@ void heap_push(Heap * pq, void * data, int priority) {
   pq->heapArray[hijo].data = data;
   pq->heapArray[hijo].priority = priority;
   pq->size = hijo + 1;
-  hijo = hijp + 1;
 
   while(priority > pq->heapArray[padre].priority) {
     aux.priority = pq->heapArray[hijo].priority;
@@ -49,7 +48,7 @@ void heap_push(Heap * pq, void * data, int priority) {
     pq->heapArray[padre].priority = aux.priority;
     pq->heapArray[padre].data = aux.data;
 
-    hijo = padre;
+    pq->size = padre;
 
     int i;
     printf("\t[");
