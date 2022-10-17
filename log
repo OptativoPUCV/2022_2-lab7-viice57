@@ -966,3 +966,14 @@ heap.c:29:87: error: unused variable ‘hijo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 763306c
+Mon 17 Oct 2022 02:36:29 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:29:92: error: unused variable ‘hijo’ [-Werror=unused-variable]
+   29 |   if(pq->heapArray[pq->size].priority == 0 || pq->heapArray[pq->size].data == NULL) {  int hijo = pq->size;}
+      |                                                                                            ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ebf81a2
