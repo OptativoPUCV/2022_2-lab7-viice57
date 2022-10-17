@@ -485,3 +485,14 @@ Mon 17 Oct 2022 01:37:16 AM UTC:
  tests:  4|2
 total_score: 30/70
 ddfed05
+Mon 17 Oct 2022 01:39:03 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:42:9: error: ‘heapElem’ {aka ‘struct nodo’} has no member named ‘priorit’; did you mean ‘priority’?
+   42 |     aux.priorit = pq->heapArray[hijo].priority;
+      |         ^~~~~~~
+      |         priority
+Compilation failed
+e4298ff
