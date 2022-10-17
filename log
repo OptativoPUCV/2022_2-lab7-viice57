@@ -121,3 +121,9 @@ heap.c:58:1: error: expected identifier or ‘(’ before ‘}’ token
       | ^
 Compilation failed
 427bf4c
+Mon 17 Oct 2022 01:01:16 AM UTC: 
+ heap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  2|2
+total_score: 20/70
+26a9160

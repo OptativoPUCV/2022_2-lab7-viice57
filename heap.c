@@ -40,8 +40,7 @@ void heap_push(Heap * pq, void * data, int priority) {
     heapElem aux;
     int padre = (hijo - 1) / 2;
 
-    if(priority > pq->heapArray[pq->size].priority)
-    {
+    if(priority > pq->heapArray[pq->size].priority) {
          aux.priority = pq->heapArray[padre].priority;
          aux.data = pq->heapArray[padre].data;
       
@@ -53,7 +52,6 @@ void heap_push(Heap * pq, void * data, int priority) {
       
          hijo = padre;
       }
-    }
   }
 }
 
