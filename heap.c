@@ -36,7 +36,7 @@ void heap_push(Heap * pq, void * data, int priority) {
   pq->heapArray[hijo].priority = priority;
   pq->size = pq->size + 1;
 
-  while(hijo != 0) {
+  while(hijo > 0) {
     heapElem aux;
     int padre = (hijo - 1) / 2;
 
